@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Loan Prediction Form</title>
+</head>
+<body>
+    <h1>Loan Prediction Form</h1>
+    <form action="http://localhost:8000/prediction" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br>
+
+        <label for="clerk_type">Clerk Type:</label>
+        <input type="text" id="clerk_type" name="clerk_type" required><br>
+
+        <label for="payment_day">Payment Day:</label>
+        <input type="number" id="payment_day" name="payment_day" required><br>
+
+        <label for="application_submission_type">Application Submission Type:</label>
+        <input type="text" id="application_submission_type" name="application_submission_type" required><br>
+
+        <label for="quant_additional_cards">Quantity of Additional Cards:</label>
+        <input type="number" id="quant_additional_cards" name="quant_additional_cards" required><br>
+
+        <label for="postal_address_type">Postal Address Type:</label>
+        <input type="number" id="postal_address_type" name="postal_address_type" required><br>
+
+        <label for="sex">Sex:</label>
+        <input type="text" id="sex" name="sex" required><br>
+
+        <label for="marital_status">Marital Status:</label>
+        <input type="number" id="marital_status" name="marital_status" required><br>
+
+        <label for="quant_dependants">Quantity of Dependents:</label>
+        <input type="number" id="quant_dependants" name="quant_dependants" required><br>
+
+        <label for="education_level">Education Level:</label>
+        <select id="education_level" name="education_level" required>
+            <option value="1">High School</option>
+            <option value="2">Associate Degree</option>
+            <option value="3">Bachelor's Degree</option>
+            <option value="4">Master's Degree</option>
+            <option value="5">Ph.D.</option>
+        </select><br>
+
+        <label for="state_of_birth">State of Birth:</label>
+        <input type="text" id="state_of_birth" name="state_of_birth" required><br>
+
+        <label for="city_of_birth">City of Birth:</label>
+        <input type="text" id="city_of_birth" name="city_of_birth" required><br>
+
+        <label for="nacionality">Nationality:</label>
+        <input type="number" id="nacionality" name="nacionality" required><br>
+
+        <label for="residential_state">Residential State:</label>
+        <input type="text" id="residential_state" name="residential_state" required><br>
+
+        <label for="residential_city">Residential City:</label>
+        <input type="text" id="residential_city" name="residential_city" required><br>
+
+        <label for="residential_borough">Residential Borough:</label>
+        <input type="text" id="residential_borough" name="residential_borough" required><br>
+
+        <label for="flag_residencial_phone">Residential Phone Flag:</label>
+        <input type="text" id="flag_residencial_phone" name="flag_residencial_phone" required><br>
+
+        <label for="residential_phone_area_code">Residential Phone Area Code:</label>
+        <input type="text" id="residential_phone_area_code" name="residential_phone_area_code" required><br>
+
+        <label for="residence_type">Residence Type:</label>
+        <input type="number" id="residence_type" name="residence_type" required><br>
+
+        <label for="months_in_residence">Months in Residence:</label>
+        <input type="number" id="months_in_residence" name="months_in_residence" required><br>
+
+        <label for="flag_mobile_phone">Mobile Phone Flag:</label>
+        <input type="text" id="flag_mobile_phone" name="flag_mobile_phone" required><br>
+
+        <label for="flag_email">Email Flag:</label>
+        <input type="number" id="flag_email" name="flag_email" required><br>
+
+        <label for="personal_monthly_income">Personal Monthly Income:</label>
+        <input type="number" id="personal_monthly_income" name="personal_monthly_income" required><br>
+
+        <label for="other_incomes">Other Incomes:</label>
+        <input type="number" id="other_incomes" name="other_incomes" required><br>
+
+        <label for="flag_visa">Visa Flag:</label>
+        <input type="number" id="flag_visa" name="flag_visa" required><br>
+
+        <label for="flag_mastercard">Mastercard Flag:</label>
+        <input type="number" id="flag_mastercard" name="flag_mastercard" required><br>
+
+        <label for="flag_diners">Diners Flag:</label>
+        <input type="number" id="flag_diners" name="flag_diners" required><br>
+
+        <label for="flag_american_express">American Express Flag:</label>
+        <input type="number" id="flag_american_express" name="flag_american_express" required><br>
+
+        <label for="flag_other_cards">Other Cards Flag:</label>
+        <input type="number" id="flag_other_cards" name="flag_other_cards" required><br>
+
+        <label for="quant_banking_accounts">Quantity of Banking Accounts:</label>
+        <input type="number" id="quant_banking_accounts" name="quant_banking_accounts" required><br>
+
+        <label for="quant_special_banking_accounts">Quantity of Special Banking Accounts:</label>
+        <input type="number" id="quant_special_banking_accounts" name="quant_special_banking_accounts" required><br>
+
+        <label for="personal_assets_value">Personal Assets Value:</label>
+        <input type="number" id="personal_assets_value" name="personal_assets_value" required><br>
+
+        <label for="quant_cars">Quantity of Cars:</label>
+        <input type="number" id="quant_cars" name="quant_cars" required><br>
+
+        <label for="company">Company:</label>
+        <input type="text" id="company" name="company" required><br>
+
+        <label for="professional_state">Professional State:</label>
+        <input type="text" id="professional_state" name="professional_state" required><br>
+
+        <label for="professional_city">Professional City:</label>
+        <input type="text" id="professional_city" name="professional_city" required><br>
+
+        <label for="professional_borough">Professional Borough:</label>
+        <input type="text" id="professional_borough" name="professional_borough" required><br>
+
+        <label for="flag_professional_phone">Professional Phone Flag:</label>
+        <input type="text" id="flag_professional_phone" name="flag_professional_phone" required><br>
+
+        <label for="professional_phone_area_code">Professional Phone Area Code:</label>
+        <input type="text" id="professional_phone_area_code" name="professional_phone_area_code" required><br>
+
+        <label for="months_in_the_job">Months in the Job:</label>
+        <input type="number" id="months_in_the_job" name="months_in_the_job" required><br>
+
+        <label for="profession_code">Profession Code:</label>
+        <input type="number" id="profession_code" name="profession_code" required><br>
+
+        <label for="occupation_type">Occupation Type:</label>
+        <input type="number" id="occupation_type" name="occupation_type" required><br>
+
+        <label for="mate_profession_code">Mate Profession Code:</label>
+        <input type="number" id="mate_profession_code" name="mate_profession_code" required><br>
+
+        <label for="home_address_document">Home Address Document:</label>
+        <input type="number" id="home_address_document" name="home_address_document" required><br>
+
+        <label for="flag_rg">RG Flag:</label>
+        <input type="number" id="flag_rg" name="flag_rg" required><br>
+
+        <label for="flag_cpf">CPF Flag:</label>
+        <input type="number" id="flag_cpf" name="flag_cpf" required><br>
+
+        <label for="flag_income_proof">Income Proof Flag:</label>
+        <input type="number" id="flag_income_proof" name="flag_income_proof" required><br>
+
+        <label for="product">Product:</label>
+        <input type="number" id="product" name="product" required><br>
+
+        <label for="flag_acsp_record">ACSP Record Flag:</label>
+        <input type="text" id="flag_acsp_record" name="flag_acsp_record" required><br>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required><br>
+
+        <label for="residencial_zip_3">Residential ZIP 3:</label>
+        <input type="text" id="residencial_zip_3" name="residencial_zip_3" required><br>
+
+        <label for="professional_zip_3">Professional ZIP 3:</label>
+        <input type="text" id="professional_zip_3" name="professional_zip_3" required><br>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
+
+
