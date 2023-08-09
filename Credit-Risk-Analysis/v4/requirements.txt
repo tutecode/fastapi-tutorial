@@ -1,0 +1,8 @@
+fastapi
+uvicorn
+pandas
+joblib
+redis
+jinja2
+Markdown
+termcolor
